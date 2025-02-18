@@ -32,7 +32,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_65%,theme(colors.orange.900))]"
+        className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.75)_65%,theme(colors.orange.900))]"
       />
 
       <div className="p-10 absolute inset-0">
@@ -76,7 +76,7 @@ export default function Home() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
-          className="content-centet"
+          className="content-center"
         >
           <motion.h1
             className="text-9xl font-extrabold text-orange-600 uppercase"
