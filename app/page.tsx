@@ -1,13 +1,15 @@
 "use client";
 
+import SplashScreen from "components/SplashScreen";
 import { motion } from "framer-motion";
 import { useImages } from "hooks/useImages";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const { images: backgroundImages, loadImages: loadBackgroundImages } =
     useImages("background-images");
+  const [isSplashLoaded, setIsSplashLoaded] = useState(false);
 
   useEffect(() => {
     if (!backgroundImages.length) {
@@ -15,8 +17,12 @@ export default function Home() {
     }
   }, [loadBackgroundImages, backgroundImages]);
 
-  if (!backgroundImages.length) {
-    return <div>Carregando...</div>;
+  const handleSplashLoaded = () => {
+    setIsSplashLoaded(true);
+  };
+
+  if (!backgroundImages.length || !isSplashLoaded) {
+    return <SplashScreen onLoaded={handleSplashLoaded} />;
   }
 
   return (
@@ -35,12 +41,12 @@ export default function Home() {
         className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.75)_65%,theme(colors.orange.900))]"
       />
 
-      <div className="p-10 absolute inset-0">
+      <div className="p-10 absolute inset-0 z-40 h-28">
         <motion.header
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex py-1.5 px-10 items-center justify-between w-full bg-white/10 backdrop-blur-sm rounded-full"
+          className="flex py-1.5 px-10 items-center justify-between w-full bg-white/20 backdrop-blur-sm rounded-full"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -140,7 +146,7 @@ export default function Home() {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="h-full"
+          className="h-full z-40"
         >
           <Image
             height={0}
