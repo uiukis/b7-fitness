@@ -8,10 +8,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "black-rgba": "rgba(0, 0, 0, 0.54)",
+      fontFamily: {
+        nexaBlack: "var(--font-nexa-black)",
+        nexaRegular: "var(--font-nexa-regular)",
+        nexaItalic: "var(--font-nexa-regular-italic)",
+        nexaLightItalic: "var(--font-nexa-extralight-italic)",
       },
     },
   },

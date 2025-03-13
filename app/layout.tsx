@@ -1,34 +1,50 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const nexaBlack = localFont({
+  src: "../public/fonts/nexa-black.otf",
+  variable: "--font-nexa-black",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nexaRegular = localFont({
+  src: "../public/fonts/nexa-regular.otf",
+  variable: "--font-nexa-regular",
+});
+
+const nexaRegularItalic = localFont({
+  src: "../public/fonts/nexa-regular-italic.ttf",
+  variable: "--font-nexa-regular-italic",
+});
+
+const nexaExtraLightItalic = localFont({
+  src: "../public/fonts/nexa-extralight-italic.ttf",
+  variable: "--font-nexa-extralight-italic",
 });
 
 export const metadata: Metadata = {
-  title: "B7 Fitness",
+  title: "B7 bodyfitness",
   description: "",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-br">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <>
+      <Head>
+        <link
+          href="https://fonts.bunny.net/css?family=nexa:400,700"
+          rel="stylesheet"
+        />
+      </Head>
+      <html
+        lang="pt-br"
+        className={`${nexaBlack.variable} ${nexaRegular.variable} ${nexaRegularItalic.variable} ${nexaExtraLightItalic.variable}`}
       >
-        {children}
-      </body>
-    </html>
+        <body className="antialiased">{children}</body>
+      </html>
+    </>
   );
 }

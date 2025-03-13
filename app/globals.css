@@ -17,5 +17,22 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nexa", sans-serif;
+  overflow-x: hidden;
+}
+
+.font-black {
+  font-family: var(--font-nexa-black);
+}
+
+.font-regular {
+  font-family: var(--font-nexa-regular);
+}
+
+.font-italic {
+  font-family: var(--font-nexa-regular-italic);
+}
+
+.font-light-italic {
+  font-family: var(--font-nexa-extralight-italic);
 }
