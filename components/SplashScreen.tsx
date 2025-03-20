@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface SplashScreenProps {
@@ -32,15 +33,15 @@ export default function SplashScreen({ onLoaded }: SplashScreenProps) {
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="text-center"
+        className="flex flex-col justify-center items-center"
       >
-        {/* <Image
-          src="/logo.png"
+        <Image
+          src="images/logo.png"
           alt="Logo"
-          width={150}
-          height={150}
+          width={200}
+          height={0}
           className="mb-4"
-        /> */}
+        />
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 2, ease: "linear" }}

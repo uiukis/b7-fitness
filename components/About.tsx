@@ -3,41 +3,54 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="relative w-screen h-full">
-      <Image
-        src="/images/background-about.png"
-        alt="background"
-        width={1920}
-        height={1080}
-        className="object-cover"
-        unoptimized
-      />
+    <div className="relative w-screen h-screen md:h-full overflow-hidden">
+      <div className="hidden md:block">
+        <Image
+          src="/images/background-about.png"
+          alt="background"
+          width={1920}
+          height={1080}
+          className="object-cover"
+          unoptimized
+        />
+      </div>
+      <div className="block md:hidden absolute inset-0 w-full h-ful">
+        <Image
+          src="/images/background-about.png"
+          alt="background"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-30"
+          priority
+          unoptimized
+        />
+      </div>
       <motion.section
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex absolute inset-0 items-baseline justify-center"
+        className="absolute inset-0 flex items-center justify-end text-center px-6 md:px-0"
       >
-        <div className="2xl:mt-80 xl:mt-56 2xl:ml-96 w-2/6 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-start w-full md:w-1/2 md:mb-72 md:mr-24">
           <motion.h1
-            className="uppercase text-6xl font-nexaBlack text-orange-600"
+            className="uppercase text-orange-600 font-nexaBlack text-left text-4xl md:text-7xl"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
             quem somos
           </motion.h1>
-          <motion.h1
-            className="uppercase font-nexaRegular mt-10 mr-10 text-white text-2xl w-96"
+          <motion.p
+            className="uppercase font-nexaRegular text-left mt-6 text-white text-lg md:text-2xl leading-snug max-w-md md:max-w-lg"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            LOREM I PSUM DOLOR SI T AMET, CONSECTETUR ADI PI SCI NG ELI T, SED
-            DO EI USMOD TEMPOR I NCI DI DUNT UT LABORE ET DOLORE MAGNA ALI QUA.
-            QUI S I PSUM SUSPENDI SSE UL TRI CES GRAVI DA. RI SUS COMMODO VI
-            VERRA MAECENAS AC
-          </motion.h1>
+            Aqui, acreditamos que cada treino é um passo rumo à sua melhor
+            versão. Nosso compromisso é com a sua evolução. Contamos com uma
+            estrutura moderna, profissionais qualificados e um método que
+            combina ciência e performance para garantir resultados reais.
+          </motion.p>
         </div>
       </motion.section>
     </div>

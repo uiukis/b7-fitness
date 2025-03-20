@@ -116,8 +116,6 @@ export default function Carousel() {
           </motion.div>
         </AnimatePresence>
       </div>
-
-      {/* Botão de avançar */}
       <button
         onClick={nextSlide}
         type="button"
