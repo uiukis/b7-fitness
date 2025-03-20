@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { units } from "utils/data";
 import Header from "components/Header";
 import LocationPage from "components/Location";
@@ -26,14 +27,18 @@ export default async function UnitPage({
   return (
     <>
       <Header />
-      <UnitHome unit={unit} />
-      <UnitModalities unit={unit} />
-      <LocationPage
-        unit={{
-          ...unit,
-          position: [unit.position[0], unit.position[1]] as [number, number],
-        }}
-      />
+      <Suspense
+        fallback={<p className="text-white text-center mt-20">Carregando...</p>}
+      >
+        <UnitHome unit={unit} />
+        <UnitModalities unit={unit} />
+        <LocationPage
+          unit={{
+            ...unit,
+            position: [unit.position[0], unit.position[1]] as [number, number],
+          }}
+        />
+      </Suspense>
       <Footer />
     </>
   );
