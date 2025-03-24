@@ -53,7 +53,7 @@ export default function Header() {
         padding: isScrolled ? "8px 0" : "50px 0",
       }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 w-screen flex flex-col items-center md:justify-center z-50 backdrop-blur-md overflow-hidden"
+      className="fixed top-0 left-0 w-screen flex flex-col items-center md:justify-center z-50 backdrop-blur-md  "
     >
       <motion.div
         initial={{ opacity: 0, x: 50 }}
@@ -79,7 +79,6 @@ export default function Header() {
             width={200}
             height={50}
             priority
-            unoptimized
           />
         </motion.div>
 

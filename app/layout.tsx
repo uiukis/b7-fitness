@@ -24,7 +24,7 @@ const nexaExtraLightItalic = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "B7 bodyfitness",
+  title: "B7bodyfitness",
   description: "",
 };
 

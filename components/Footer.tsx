@@ -85,7 +85,6 @@ export default function Footer() {
               width={220}
               height={0}
               priority
-              unoptimized
             />
           </motion.div>
           <div className="flex gap-4 mt-4 lg:mt-0">

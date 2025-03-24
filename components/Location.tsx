@@ -15,13 +15,13 @@ const DynamicMap = dynamic(() => import("../components/MapComponent"), {
 
 export default function LocationPage({ unit }: LocationProps) {
   return (
-    <div className="relative w-screen min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 md:px-0">
+    <div className="relative w-screen min-h-screen flex flex-col items-center justify-center   px-4 md:px-0">
       <div className="absolute inset-0 w-full h-full flex flex-col items-center">
         <h1 className="relative mt-10 md:mt-32 uppercase z-30 text-4xl md:text-6xl font-nexaBlack text-orange-500 text-center">
           localização
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 w-full max-w-6xl md:mt-20">
-          <div className="relative w-80 h-2/4 md:h-4/5 border-4 border-[#FF6A00] rounded-3xl overflow-hidden">
+          <div className="relative w-80 h-2/4 md:h-4/5 border-4 border-[#FF6A00] rounded-3xl  ">
             <DynamicMap position={[unit.position[0], unit.position[1]]} />
           </div>
           <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto">

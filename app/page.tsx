@@ -9,7 +9,7 @@ import OurAcademyPage from "components/OurAcademy";
 import PlansPage from "components/Plans";
 import Footer from "components/Footer";
 import Header from "components/Header";
-import SearchParamHandler from "components/SearchParamHandler"; // Novo componente
+import SearchParamHandler from "components/SearchParamHandler";
 
 export default function Home() {
   const [isSplashLoaded, setIsSplashLoaded] = useState(false);

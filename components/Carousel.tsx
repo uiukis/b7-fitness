@@ -95,7 +95,7 @@ export default function Carousel() {
         </span>
       </button>
 
-      <div className="flex overflow-hidden relative w-full h-full">
+      <div className="flex relative w-full h-full">
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={currentIndex}
@@ -111,7 +111,6 @@ export default function Carousel() {
               src={images[currentIndex]?.url || "/default-image.jpg"}
               alt={`Slide ${currentIndex}`}
               className="rounded-lg object-cover"
-              unoptimized
             />
           </motion.div>
         </AnimatePresence>

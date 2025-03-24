@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="relative w-screen h-screen md:h-full overflow-hidden">
+    <div className="relative w-screen h-screen md:h-full">
       <div className="hidden md:block">
         <Image
           src="/images/background-about.png"
@@ -11,19 +11,18 @@ export default function AboutPage() {
           width={1920}
           height={1080}
           className="object-cover"
-          unoptimized
         />
       </div>
       <div className="block md:hidden absolute inset-0 w-full h-ful">
         <Image
-          src="/images/background-about.png"
+          src="/images/background-about-mobile.png"
           alt="background"
           layout="fill"
           objectFit="cover"
-          className="opacity-30"
+          className=""
           priority
-          unoptimized
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-black/30 " />
       </div>
       <motion.section
         initial={{ y: 50, opacity: 0 }}

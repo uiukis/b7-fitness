@@ -10,7 +10,7 @@ interface UnitHomeProps {
 
 export default function UnitHome({ unit }: UnitHomeProps) {
   return (
-    <div className="relative w-screen h-screen md:h-full overflow-hidden">
+    <div className="relative w-screen h-screen md:h-full  ">
       <div className="hidden md:block">
         <Image
           src={unit.image}
@@ -20,7 +20,6 @@ export default function UnitHome({ unit }: UnitHomeProps) {
           priority
           objectFit="cover"
           className="opacity-50"
-          unoptimized
         />
       </div>
       <div className="block md:hidden absolute inset-0 w-full h-full">
@@ -31,7 +30,6 @@ export default function UnitHome({ unit }: UnitHomeProps) {
           objectFit="cover"
           className="opacity-50"
           priority
-          unoptimized
         />
       </div>
       <motion.section

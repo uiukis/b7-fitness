@@ -11,7 +11,7 @@ interface SectionProps {
 
 export function Section({ title, isActive, onClick, children }: SectionProps) {
   return (
-    <div className="border rounded-lg overflow-hidden mb-4">
+    <div className="border rounded-lg mb-4">
       <motion.button
         whileTap={{ scale: 0.95 }}
         whileHover={{ backgroundColor: "#1e293b" }}

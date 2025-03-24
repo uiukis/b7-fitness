@@ -41,12 +41,6 @@ export interface Unit {
   modalities: Modality[];
 }
 
-export interface Benefit {
-  title: string;
-  image: string;
-  text: string;
-}
-
 export interface Plan {
   title: string;
   description: string[];

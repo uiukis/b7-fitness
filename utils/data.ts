@@ -1,4 +1,4 @@
-import { Unit, Benefit, Plan, Routes, Texts } from "types/types";
+import { Unit, Plan, Routes, Texts, Modality } from "types/types";
 
 export const texts: Texts[] = ["sobre", "unidades", "modalidades", "planos"];
 
@@ -112,7 +112,7 @@ export const units: Unit[] = [
   },
 ];
 
-export const benefits: Benefit[] = [
+export const benefits: Modality[] = [
   {
     title: "EQUIPAMENTOS MODERNOS",
     image: "/images/equipamentos.jpg",
