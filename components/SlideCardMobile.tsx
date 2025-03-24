@@ -41,9 +41,10 @@ export default function SlideCardMobile({
         marginTop: index !== 0 ? -10 : 0,
       }}
     >
-      <span className="text-black text-center font-nexaBlack text-xl uppercase">
+      <span className="text-black text-center font-nexaBlack text-xl uppercase select-none">
         {data.title}
       </span>
+
       {activeIndex === index && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}

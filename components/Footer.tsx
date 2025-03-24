@@ -62,7 +62,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-black text-white py-10 relative z-50"
+      className="bg-black text-white py-10 relative z-40"
     >
       <div className="container mx-auto px-6 lg:px-48">
         <div className="flex flex-col lg:flex-row items-center lg:justify-between border-b border-gray-500 pb-6">

@@ -36,3 +36,7 @@ body {
 .font-light-italic {
   font-family: var(--font-nexa-extralight-italic);
 }
+
+.leaflet-control-attribution {
+  display: none !important;
+}

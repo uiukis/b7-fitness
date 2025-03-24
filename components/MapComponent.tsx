@@ -20,15 +20,11 @@ export default function MapComponent({ position }: MapProps) {
     <MapContainer
       center={position}
       zoom={15}
-      style={{
-        width: "100%",
-        height: "600px",
-        borderRadius: "10px",
-        zIndex: "49",
-      }}
       scrollWheelZoom={true}
       fadeAnimation
       zoomControl={false}
+      minZoom={1}
+      className="relative w-full md:w-1/3 h-1/2 md:h-4/5 border-4 border-[#FF6A00] rounded-3xl z-40 "
     >
       <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />
       <Marker position={position} icon={customIcon}>
