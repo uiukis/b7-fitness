@@ -53,7 +53,7 @@ export default function UnitsPage() {
                 onClick={() => router.push(`/units/${unit.id}`)}
               >
                 <div className="w-72 h-96 md:w-96 md:h-96 bg-black rounded-3xl border-4 border-orange-500 shadow-lg relative">
-                  <h2 className="absolute bottom-0 left-0 right-0 text-center text-white font-nexaBlack text-2xl md:text-lg p-2 z-10">
+                  <h2 className="absolute bottom-0 left-0 right-0 text-center text-white font-nexaBlack text-2xl md:text-2xl mb-6 p-2 z-10">
                     {unit.name}
                   </h2>
                   <Image

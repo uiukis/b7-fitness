@@ -26,24 +26,30 @@ export default function LocationPage({ unit }: LocationProps) {
         <DynamicMap position={[unit.position[0], unit.position[1]]} />
 
         <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-auto">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#FF6A00]">
+          <h2 className="text-2xl md:text-4xl font-nexaRegular w-96">
             Horário de funcionamento
           </h2>
           <ul className="mt-4 space-y-2 text-lg">
-            <li>
-              <span className="text-[#FF6A00] font-bold">Seg a Sex:</span>{" "}
+            <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+                Seg a Sex <p className="md:hidden">:</p>
+              </span>
               {unit.hours.week}
             </li>
-            <li>
-              <span className="text-[#FF6A00] font-bold">Sábado:</span>{" "}
+            <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+                Sábado <p className="md:hidden">:</p>
+              </span>
               {unit.hours.saturday}
             </li>
-            <li>
-              <span className="text-[#FF6A00] font-bold">Domingo:</span>{" "}
+            <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+                Domingo <p className="md:hidden">:</p>
+              </span>
               {unit.hours.sunday}
             </li>
           </ul>
-          <div className="mt-6 flex items-center gap-2 text-lg">
+          <div className="mt-6 flex items-center w-96 md:w-full gap-2 text-lg">
             <FaMapMarkerAlt className="text-[#FF6A00] text-2xl" />
             <p className="text-gray-300">{unit.address}</p>
           </div>

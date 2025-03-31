@@ -13,7 +13,7 @@ export const units: Unit[] = [
   {
     id: "maraponga",
     name: "Maraponga",
-    image: "/images/background-joao-carlos.png",
+    image: "/images/background-maraponga.png",
     imageInput: "/images/input-maraponga.jpg",
     address: "Av. Godofredo Maciel, 1945 - Maraponga",
     hours: {
@@ -26,19 +26,44 @@ export const units: Unit[] = [
       {
         title: "Musculação",
         image: "/images/musculacao.jpg",
-        text: "Treino de resistência e força.",
+        text: "Treino com pesos que promove força, resistência e ganho de massa muscular.",
       },
       {
-        title: "CrossFit",
-        image: "/images/crossfit.jpg",
-        text: "Treino funcional de alta intensidade.",
+        title: "FitDance",
+        image: "/images/fitdance.jpg",
+        text: "Aula animada de dança coreografada, ideal para queimar calorias se divertindo.",
+      },
+      {
+        title: "Funcional",
+        image: "/images/funcional.jpg",
+        text: "Treinamento que melhora o condicionamento físico com exercícios que simulam movimentos do dia a dia.",
+      },
+      {
+        title: "Alongamento",
+        image: "/images/alongamento.jpg",
+        text: "Exercícios voltados para melhorar a flexibilidade, postura e aliviar tensões musculares.",
+      },
+      {
+        title: "GAP",
+        image: "/images/gap.jpg",
+        text: "Foco em Glúteos, Abdômen e Pernas com exercícios localizados de alta efetividade.",
+      },
+      {
+        title: "Forró",
+        image: "/images/forro.jpg",
+        text: "Aula de dança típica nordestina, que trabalha coordenação, ritmo e interação social.",
+      },
+      {
+        title: "Pilates Solo",
+        image: "/images/pilates.jpg",
+        text: "É uma prática que se concentra em exercícios realizados no chão, usando um tapete.",
       },
     ],
   },
   {
     id: "sao-paulo",
     name: "São Paulo",
-    image: "/images/background-joao-carlos.png",
+    image: "/images/background-sao-paulo.jpg",
     imageInput: "/images/input-sao-paulo.jpg",
     address: "R. São Paulo, 1648 - Centro",
     hours: {
@@ -49,14 +74,39 @@ export const units: Unit[] = [
     position: [-3.7216146212465433, -38.54022004768853],
     modalities: [
       {
-        title: "Yoga",
-        image: "/images/yoga.jpg",
-        text: "Práticas de relaxamento e flexibilidade.",
+        title: "Musculação",
+        image: "/images/musculacao.jpg",
+        text: "Treino com pesos que promove força, resistência e ganho de massa muscular.",
       },
       {
-        title: "Pilates",
+        title: "FitDance",
+        image: "/images/fitdance.jpg",
+        text: "Aula animada de dança coreografada, ideal para queimar calorias se divertindo.",
+      },
+      {
+        title: "Funcional",
+        image: "/images/funcional.jpg",
+        text: "Treinamento que melhora o condicionamento físico com exercícios que simulam movimentos do dia a dia.",
+      },
+      {
+        title: "Alongamento",
+        image: "/images/alongamento.jpg",
+        text: "Exercícios voltados para melhorar a flexibilidade, postura e aliviar tensões musculares.",
+      },
+      {
+        title: "GAP",
+        image: "/images/gap.jpg",
+        text: "Foco em Glúteos, Abdômen e Pernas com exercícios localizados de alta efetividade.",
+      },
+      {
+        title: "Forró",
+        image: "/images/forro.jpg",
+        text: "Aula de dança típica nordestina, que trabalha coordenação, ritmo e interação social.",
+      },
+      {
+        title: "Pilates Solo",
         image: "/images/pilates.jpg",
-        text: "Treinamento para fortalecimento e postura.",
+        text: "É uma prática que se concentra em exercícios realizados no chão, usando um tapete.",
       },
     ],
   },
@@ -74,21 +124,46 @@ export const units: Unit[] = [
     position: [-3.7825172360883346, -38.55380791718331],
     modalities: [
       {
-        title: "Zumba",
-        image: "/images/zumba.jpg",
-        text: "Dança aeróbica com ritmos latinos.",
+        title: "Musculação",
+        image: "/images/musculacao.jpg",
+        text: "Treino com pesos que promove força, resistência e ganho de massa muscular.",
       },
       {
-        title: "HIIT",
-        image: "/images/hiit.jpg",
-        text: "Treinamento intervalado de alta intensidade.",
+        title: "FitDance",
+        image: "/images/fitdance.jpg",
+        text: "Aula animada de dança coreografada, ideal para queimar calorias se divertindo.",
+      },
+      {
+        title: "Funcional",
+        image: "/images/funcional.jpg",
+        text: "Treinamento que melhora o condicionamento físico com exercícios que simulam movimentos do dia a dia.",
+      },
+      {
+        title: "Alongamento",
+        image: "/images/alongamento.jpg",
+        text: "Exercícios voltados para melhorar a flexibilidade, postura e aliviar tensões musculares.",
+      },
+      {
+        title: "GAP",
+        image: "/images/gap.jpg",
+        text: "Foco em Glúteos, Abdômen e Pernas com exercícios localizados de alta efetividade.",
+      },
+      {
+        title: "Forró",
+        image: "/images/forro.jpg",
+        text: "Aula de dança típica nordestina, que trabalha coordenação, ritmo e interação social.",
+      },
+      {
+        title: "Pilates Solo",
+        image: "/images/pilates.jpg",
+        text: "É uma prática que se concentra em exercícios realizados no chão, usando um tapete.",
       },
     ],
   },
   {
     id: "joao-xxiii",
     name: "João XXIII",
-    image: "/images/background-joao-carlos.png",
+    image: "/images/background-joao-xxiii.jpg",
     imageInput: "/images/input-joao-23.jpg",
     address: "Rua Aluísio Azevedo, 86 - João XXIII",
     hours: {
@@ -99,14 +174,49 @@ export const units: Unit[] = [
     position: [-3.7745481127694682, -38.57289561718324],
     modalities: [
       {
-        title: "Funcional",
-        image: "/images/funcional.jpg",
-        text: "Treinamento para mobilidade e resistência.",
+        title: "Musculação",
+        image: "/images/musculacao.jpg",
+        text: "Treino com pesos que promove força, resistência e ganho de massa muscular.",
       },
       {
-        title: "Spinning",
-        image: "/images/spinning.jpg",
-        text: "Aulas de ciclismo indoor com intensidade.",
+        title: "FitDance",
+        image: "/images/fitdance.jpg",
+        text: "Aula animada de dança coreografada, ideal para queimar calorias se divertindo.",
+      },
+      {
+        title: "Funcional",
+        image: "/images/funcional.jpg",
+        text: "Treinamento que melhora o condicionamento físico com exercícios que simulam movimentos do dia a dia.",
+      },
+      {
+        title: "Alongamento",
+        image: "/images/alongamento.jpg",
+        text: "Exercícios voltados para melhorar a flexibilidade, postura e aliviar tensões musculares.",
+      },
+      {
+        title: "GAP",
+        image: "/images/gap.jpg",
+        text: "Foco em Glúteos, Abdômen e Pernas com exercícios localizados de alta efetividade.",
+      },
+      {
+        title: "Ritbox",
+        image: "/images/ritbox.jpg",
+        text: "Combinação de ritmos dançantes com movimentos de boxe para queimar calorias e aliviar o estresse.",
+      },
+      {
+        title: "Forró",
+        image: "/images/forro.jpg",
+        text: "Aula de dança típica nordestina, que trabalha coordenação, ritmo e interação social.",
+      },
+      {
+        title: "Pilates Solo",
+        image: "/images/pilates.jpg",
+        text: "É uma prática que se concentra em exercícios realizados no chão, usando um tapete.",
+      },
+      {
+        title: "Fullbody",
+        image: "/images/fullbody.jpg",
+        text: "Treinamento que ativa o corpo inteiro em uma única sessão, unindo força, cardio e resistência.",
       },
     ],
   },
@@ -173,8 +283,8 @@ export const plans: Plan[] = [
       "Cadeiras de massagem",
       "Treine em todas as unidades",
     ],
-    price: "149,90",
-    fullPrice: "169,90",
+    price: "114,90",
+    fullPrice: "1318,90",
     benefits: [true, true, true, true],
   },
 ];

@@ -62,7 +62,7 @@ export default function Header() {
         className="flex items-center justify-between w-full max-w-7xl px-6"
       >
         <motion.div
-          animate={{ scale: isScrolled ? 0.8 : 1 }}
+          animate={{ scale: isScrolled ? 0.7 : 1 }}
           transition={{ duration: 0.5 }}
           className="cursor-pointer"
           onClick={() => {
@@ -73,13 +73,24 @@ export default function Header() {
             }
           }}
         >
-          <Image
-            src="/images/logo.png"
-            alt="logo"
-            width={200}
-            height={50}
-            priority
-          />
+          <div className="hidden md:block">
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={300}
+              height={50}
+              priority
+            />
+          </div>
+          <div className="block md:hidden">
+            <Image
+              src="/images/logo.png"
+              alt="logo"
+              width={200}
+              height={50}
+              priority
+            />
+          </div>
         </motion.div>
 
         <div className="md:hidden pr-4">

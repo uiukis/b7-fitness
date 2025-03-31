@@ -36,17 +36,21 @@ export default function SlideCardDesktop({
             : "0px 5px 15px rgba(0, 0, 0, 0.9)",
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="relative flex flex-col items-center justify-center cursor-pointer p-4   rounded-lg"
+      className="relative flex flex-col items-center justify-center cursor-pointer p-4 rounded-lg"
       onMouseEnter={() => setActiveIndex(index)}
       onMouseLeave={() => setActiveIndex(totalCards - 1)}
       style={{
         zIndex: activeIndex === index ? 10 : index,
         marginLeft: index !== 0 ? -10 : 0,
+        marginRight: index !== totalCards - 1 ? -10 : 0,
       }}
     >
       <span
-        className="text-black font-nexaBlack text-xl uppercase transform rotate-180 whitespace-nowrap"
-        style={{ writingMode: "vertical-rl" }}
+        className="text-black font-nexaBlack text-xl uppercase transform rotate-180 whitespace-nowrap "
+        style={{
+          writingMode: "vertical-rl",
+          opacity: activeIndex === index ? 0 : 1,
+        }}
       >
         {data.title}
       </span>

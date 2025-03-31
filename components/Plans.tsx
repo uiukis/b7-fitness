@@ -46,21 +46,21 @@ export default function PlansPage() {
         />
       </div>
       <div className="absolute inset-0 w-full h-full flex flex-col items-center justify-center px-4 md:px-0">
-        <h1 className="relative z-30 text-4xl md:text-6xl font-nexaBlack text-orange-500 text-center mb-16 md:mb-10">
+        <h1 className="relative z-30 text-4xl md:text-6xl font-nexaBlack text-orange-500 text-center mb-6 md:mb-10">
           PLANOS
         </h1>
-        <div className="relative w-full md:w-1/2 flex items-center justify-center md:mt-40">
+        <div className="relative w-full md:w-1/2 flex items-center justify-center md:mt-20">
           <div ref={sliderRef} className="keen-slider">
             {plans.map((plan, index) => (
               <motion.div
                 key={index}
                 className="keen-slider__slide flex justify-center items-center"
               >
-                <div className="w-72 md:w-96 h-full bg-[#222] p-6 rounded-lg shadow-lg">
-                  <h2 className="text-2xl font-bold text-[#FF6A00]">
+                <div className="w-80 md:w-[620px] min-h-[500px] font-nexaBlack text-center bg-[#222] p-8 gap-2 rounded-lg shadow-lg flex flex-col justify-between">
+                  <h2 className="text-5xl font-bold text-[#FF6A00]">
                     {plan.title}
                   </h2>
-                  <ul className="mt-4 space-y-3 text-left w-full">
+                  <ul className="md:mt-4 font-nexaBlack space-y-3 text-left w-full">
                     {plan.description.map((benefit, i) => (
                       <li key={i}>
                         {plan.benefits[i] ? (
@@ -72,20 +72,35 @@ export default function PlansPage() {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-6 text-lg font-bold text-gray-300">
+                  <p className="md:mt-4 text-lg font-bold text-gray-300">
                     A PARTIR DE
                   </p>
-                  <p className="text-4xl font-extrabold text-white">
-                    R$ {plan.price}
+                  <div className="flex items-stretch justify-center gap-1">
+                    <div className="relative flex flex-col items-start text-xl font-extrabold text-white leading-none">
+                      <p className="text-xl">R$</p>
+                      {plan.title === "FAMÍLIA" ? (
+                        <p className="absolute top-6 text-base font-nexaRegular text-white">
+                          12x
+                        </p>
+                      ) : null}
+                    </div>
+                    <p className="text-5xl font-extrabold text-white">
+                      {plan.price}
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-400">
+                    {plan.title === "FAMÍLIA"
+                      ? "Pagamento no crédito por pessoa"
+                      : "Pagamento por recorrência"}
                   </p>
                   <p className="text-sm text-gray-400">
-                    Pagamento por recorrência
-                  </p>
-                  <p className="text-sm text-gray-400">
-                    R$ {plan.fullPrice} sem recorrência
+                    R$ {plan.fullPrice}
+                    {plan.title === "FAMÍLIA"
+                      ? " anual no pix ou débito"
+                      : " sem recorrência"}
                   </p>
                   <motion.button
-                    className="mt-6 bg-[#FF6A00] text-white px-6 py-2 rounded-lg font-bold"
+                    className="md:mt-6 bg-[#FF6A00] text-white px-6 py-2 rounded-lg font-bold"
                     whileHover={{ scale: 1.1, backgroundColor: "#FF8500" }}
                     transition={{ duration: 0.2 }}
                   >

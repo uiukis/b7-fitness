@@ -3,31 +3,20 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="relative w-screen h-screen md:h-full">
-      <div className="hidden md:block">
-        <Image
-          src="/images/background-home.png"
-          alt="background"
-          width={1920}
-          height={1080}
-          objectFit="cover"
-          priority
-        />
-      </div>
-      <div className="block md:hidden absolute inset-0 w-full h-full">
-        <Image
-          src="/images/background-home.png"
-          alt="background"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-      </div>
+    <div className="relative w-screen min-h-screen h-full">
+      <Image
+        src="/images/background-home.png"
+        alt="background"
+        layout="fill"
+        objectFit="cover"
+        priority
+        className="z-0 inset-0"
+      />
       <motion.section
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="absolute inset-0 flex items-start justify-center text-center px-6 md:px-0"
+        className="absolute inset-0 flex items-start justify-center text-center px-6 md:px-0 z-10"
       >
         <div className="flex flex-col mt-48 xl:mt-52 2xl:mt-72 items-start">
           <motion.h1

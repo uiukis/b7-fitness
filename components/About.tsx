@@ -40,7 +40,7 @@ export default function AboutPage() {
             quem somos
           </motion.h1>
           <motion.p
-            className="uppercase font-nexaRegular text-left mt-6 text-white text-lg md:text-2xl leading-snug max-w-md md:max-w-lg"
+            className="font-nexaRegular text-left mt-6 ml-2 text-white text-lg md:text-2xl leading-snug max-w-md md:max-w-lg"
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
