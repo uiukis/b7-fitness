@@ -28,7 +28,7 @@ export default function PlansPage() {
     <div className="relative w-screen h-screen flex flex-col items-center justify-center  ">
       <div className="hidden md:block">
         <Image
-          src="/images/background-plans.png"
+          src="/images/background-plans.jpg"
           alt="background"
           width={1920}
           height={1080}
@@ -38,7 +38,7 @@ export default function PlansPage() {
 
       <div className="block md:hidden absolute inset-0 w-full h-full">
         <Image
-          src="/images/background-plans.png"
+          src="/images/background-plans.jpg"
           alt="background"
           layout="fill"
           objectFit="cover"
@@ -76,7 +76,7 @@ export default function PlansPage() {
                     A PARTIR DE
                   </p>
                   <div className="flex items-stretch justify-center gap-1">
-                    <div className="relative flex flex-col items-start text-xl font-extrabold text-white leading-none">
+                    <div className="relative flex flex-col items-start text-xl font-nexaBlack text-white leading-none">
                       <p className="text-xl">R$</p>
                       {plan.title === "FAMÍLIA" ? (
                         <p className="absolute top-6 text-base font-nexaRegular text-white">
@@ -84,23 +84,23 @@ export default function PlansPage() {
                         </p>
                       ) : null}
                     </div>
-                    <p className="text-5xl font-extrabold text-white">
+                    <p className="text-5xl font-nexaBlack text-white">
                       {plan.price}
                     </p>
                   </div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-gray-400 font-nexaBlack">
                     {plan.title === "FAMÍLIA"
                       ? "Pagamento no crédito por pessoa"
                       : "Pagamento por recorrência"}
                   </p>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-gray-400 font-nexaBlack lg:whitespace-nowrap">
                     R$ {plan.fullPrice}
                     {plan.title === "FAMÍLIA"
                       ? " anual no pix ou débito"
                       : " sem recorrência"}
                   </p>
                   <motion.button
-                    className="md:mt-6 bg-[#FF6A00] text-white px-6 py-2 rounded-lg font-bold"
+                    className="md:mt-6 bg-[#FF6A00] text-white font-nexaBlack px-6 py-2 rounded-lg font-bold"
                     whileHover={{ scale: 1.1, backgroundColor: "#FF8500" }}
                     transition={{ duration: 0.2 }}
                   >

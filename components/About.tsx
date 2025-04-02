@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="relative w-screen h-screen md:h-full">
       <div className="hidden md:block">
         <Image
-          src="/images/background-about.png"
+          src="/images/background-about.jpg"
           alt="background"
           width={1920}
           height={1080}
@@ -15,7 +15,7 @@ export default function AboutPage() {
       </div>
       <div className="block md:hidden absolute inset-0 w-full h-ful">
         <Image
-          src="/images/background-about-mobile.png"
+          src="/images/background-about-mobile.jpg"
           alt="background"
           layout="fill"
           objectFit="cover"

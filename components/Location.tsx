@@ -31,19 +31,19 @@ export default function LocationPage({ unit }: LocationProps) {
           </h2>
           <ul className="mt-4 space-y-2 text-lg">
             <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
-              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-nexaBlack">
                 Seg a Sex <p className="md:hidden">:</p>
               </span>
               {unit.hours.week}
             </li>
             <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
-              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-nexaBlack">
                 Sábado <p className="md:hidden">:</p>
               </span>
               {unit.hours.saturday}
             </li>
             <li className="text-xl flex md:flex-col items-center md:items-start gap-2 md:gap-0 font-nexaRegular">
-              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-bold">
+              <span className="flex text-2xl md:text-4xl text-[#FF6A00] font-nexaBlack">
                 Domingo <p className="md:hidden">:</p>
               </span>
               {unit.hours.sunday}
@@ -51,11 +51,11 @@ export default function LocationPage({ unit }: LocationProps) {
           </ul>
           <div className="mt-6 flex items-center w-96 md:w-full gap-2 text-lg">
             <FaMapMarkerAlt className="text-[#FF6A00] text-2xl" />
-            <p className="text-gray-300">{unit.address}</p>
+            <p className="text-gray-300 font-nexaBlack">{unit.address}</p>
           </div>
 
           <motion.button
-            className="mt-6 bg-[#FF6A00] text-white px-6 py-3 rounded-lg font-bold text-lg"
+            className="mt-6 bg-[#FF6A00] text-white px-6 py-3 rounded-lg font-nexaBlack text-lg"
             whileHover={{ scale: 1.1, backgroundColor: "#FF8500" }}
             transition={{ duration: 0.2 }}
           >

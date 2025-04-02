@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { animateScroll as scroll } from "react-scroll";
-import { FaInstagram, FaTiktok, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
 import Image from "next/image";
 
 const socialLinks = [
-  { icon: FaInstagram, link: "#" },
-  { icon: FaTiktok, link: "#" },
-  { icon: FaXTwitter, link: "#" },
-  { icon: FaLinkedin, link: "#" },
+  { icon: FaInstagram, link: "https://www.instagram.com/b7bodyfitness/" },
+  { icon: FaTiktok, link: "https://www.tiktok.com/@b7.bodyfitness" },
+  // { icon: FaXTwitter, link: "#" },
+  // { icon: FaLinkedin, link: "#" },
 ];
 
 const footerLinks = [
@@ -121,7 +121,7 @@ export default function Footer() {
                   >
                     <a
                       onClick={() => handleNavigation(link.route)}
-                      className="cursor-pointer transition-all"
+                      className="cursor-pointer transition-all font-nexaRegular"
                     >
                       {link.name}
                     </a>

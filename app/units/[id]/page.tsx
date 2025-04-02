@@ -20,7 +20,9 @@ export default async function UnitPage({
 
   if (!unit) {
     return (
-      <p className="text-white text-center mt-20">Unidade não encontrada</p>
+      <p className="text-white text-center font-nexaBlack mt-20">
+        Unidade não encontrada
+      </p>
     );
   }
 
@@ -28,7 +30,11 @@ export default async function UnitPage({
     <>
       <Header />
       <Suspense
-        fallback={<p className="text-white text-center mt-20">Carregando...</p>}
+        fallback={
+          <p className="text-white text-center font-nexaBlack mt-20">
+            Carregando...
+          </p>
+        }
       >
         <UnitHome unit={unit} />
         <UnitModalities unit={unit} />

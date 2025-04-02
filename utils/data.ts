@@ -13,7 +13,7 @@ export const units: Unit[] = [
   {
     id: "maraponga",
     name: "Maraponga",
-    image: "/images/background-maraponga.png",
+    image: "/images/background-maraponga.jpg",
     imageInput: "/images/input-maraponga.jpg",
     address: "Av. Godofredo Maciel, 1945 - Maraponga",
     hours: {
@@ -113,7 +113,7 @@ export const units: Unit[] = [
   {
     id: "joao-carlos",
     name: "João Carlos",
-    image: "/images/background-joao-carlos.png",
+    image: "/images/background-joao-carlos.jpg",
     imageInput: "/images/input-joao-carlos.jpg",
     address: "R. Gov. João Carlos, 858 - Serrinha",
     hours: {
@@ -171,7 +171,7 @@ export const units: Unit[] = [
       saturday: "06h às 22h",
       sunday: "08h às 18h",
     },
-    position: [-3.7745481127694682, -38.57289561718324],
+    position: [-3.7728739660282637, -38.573510059918775],
     modalities: [
       {
         title: "Musculação",

@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className="relative w-screen min-h-screen h-full">
       <Image
-        src="/images/background-home.png"
+        src="/images/background-home.jpg"
         alt="background"
         layout="fill"
         objectFit="cover"
@@ -27,12 +27,12 @@ export default function HomePage() {
           >
             transforme-se
           </motion.h1>
-          <div className="flex flex-row italic font-bold text-center uppercase">
+          <div className="flex flex-row">
             <motion.h1
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="font-nexaLightItalic text-3xl md:text-8xl sm:text-4xl"
+              className="font-nexaLightItalic uppercase text-3xl md:text-8xl sm:text-4xl"
             >
               no seu
             </motion.h1>
@@ -40,7 +40,7 @@ export default function HomePage() {
               initial={{ x: 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="text-3xl md:text-8xl sm:text-4xl ml-2"
+              className="font-nexaBlack uppercase text-3xl md:text-8xl sm:text-4xl ml-2"
             >
               melhor
             </motion.h1>

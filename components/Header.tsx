@@ -114,7 +114,7 @@ export default function Header() {
             return (
               <motion.h1
                 key={index}
-                className="uppercase font-extrabold cursor-pointer text-white transition-all duration-300 text-xl md:text-2xl
+                className="uppercase font-extrabold cursor-pointer text-white font-nexaBlack transition-all duration-300 text-xl md:text-2xl
                          hover:scale-105 hover:text-[#FF6A00] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
                 style={{
                   fontSize: isScrolled ? "1.4rem" : "1.8rem",
@@ -145,7 +145,7 @@ export default function Header() {
               return (
                 <motion.h1
                   key={index}
-                  className="uppercase font-extrabold cursor-pointer text-white transition-all duration-300 text-xl my-2
+                  className="uppercase font-extrabold cursor-pointer text-white font-nexaBlack transition-all duration-300 text-xl my-2
                              hover:scale-105 hover:text-[#FF6A00] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}

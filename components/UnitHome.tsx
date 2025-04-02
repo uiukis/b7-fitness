@@ -51,7 +51,7 @@ export default function UnitHome({ unit }: UnitHomeProps) {
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-            className="font-bold text-orange-600 uppercase text-5xl md:text-8xl"
+            className="font-bold text-orange-600 font-nexaBlack uppercase text-5xl md:text-8xl"
           >
             {unit.name}
           </motion.h1>

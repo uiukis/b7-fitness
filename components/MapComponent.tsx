@@ -23,7 +23,8 @@ export default function MapComponent({ position }: MapProps) {
       scrollWheelZoom={true}
       fadeAnimation
       zoomControl={false}
-      minZoom={1}
+      minZoom={15}
+      maxZoom={18}
       className="relative w-full md:w-1/3 h-1/2 md:h-4/5 border-4 border-[#FF6A00] rounded-3xl z-40 "
     >
       <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" />

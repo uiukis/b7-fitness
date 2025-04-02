@@ -24,7 +24,7 @@ export default function UnitsPage() {
     <div className="relative w-screen h-screen flex flex-col items-center justify-center">
       <div className="hidden md:block">
         <Image
-          src="/images/background-units.png"
+          src="/images/background-units.jpg"
           alt="background"
           width={1920}
           height={1080}
@@ -33,7 +33,7 @@ export default function UnitsPage() {
       </div>
       <div className="block md:hidden absolute inset-0 w-full h-full">
         <Image
-          src="/images/background-units.png"
+          src="/images/background-units.jpg"
           alt="background"
           layout="fill"
           objectFit="cover"
